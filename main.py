@@ -30,7 +30,7 @@ def pegar_infos(nome_arquivo):
                     # Precificação. arredondado para 2 casas decimais.
                     preco = round(float(i['prod']['vUnCom']) * multiplicador * acrescimo, 2)
                     precifica.append(preco)
-                    # Arredonda o preço para cima, divide por 3 parcelas, e arredonda para uma casa decimal
+                    # Parcela. Divide o preço unitário por 3 parcelas, arredondado para 2 casas decimais.
                     parcelado.append(round(preco/3, 2))
 
     # FileNotFoundError: Se o arquivo não for encontrado.
